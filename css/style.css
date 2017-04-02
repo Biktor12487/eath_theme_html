@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border:0;
+	text-decoration: none;
+}
+.section{
+	width: 100%;
+	float: left;
+	clear: both;
+	background:#03050a;
+}
+.container
+{
+	margin:0 auto;
+	width: 850px;
+}
+/*header*/
+.header
+{
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 670px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.siteName
+{
+	color: #fff;
+	font: 400 94px sans-serif;
+	text-align: center;
+}
+/*top nav*/
+.navRow
+{
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.topNav
+{
+	width: 60%;
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	font: 400 14px sans-serif;
+}
+.topNav a
+{
+	color: #fff;
+	font: 400 14px sans-serif;
+}
+.topNav a:hover
+{
+	color: #427098;
+	text-decoration: underline;
+}
+/*node*/
+.node
+{
+	margin: 50px 0;
+}
+.topPanelNode
+{
+	background-color: #373737;
+	font: 400 16px sans-serif;
+	max-width: 70%;
+	padding: 5px 5px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.node img
+{
+	float: right;
+	margin:15px;
+}
+.textNode
+{
+	font: 400 14px sans-serif;
+	color: #fff;
+}
+/*about*/
+.aboutUs
+{
+	padding: 50px 0;
+}
+.aboutMap
+{
+	width: 100%;
+}
+.peopleRow
+{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.peopleRow .logo 
+{
+	font: 400 24px sans-serif;
+	width: 95px;
+	height: 100px;
+	background: grey;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 100%;
+}
+.peopleRow .name
+{
+	color: #fff;
+	font: 400 18px sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
+/*contact*/
+.contact
+{
+	padding: 50px 0 100px 0;
+}
+.contact h2
+{
+	color: #fff;
+	font: 400 32px sans-serif;
+	padding-bottom: 80px;
+}
+.rowsContact
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 90%;
+	margin:0 auto;
+}
+.rowContacts
+{
+	color: grey;
+	font: 400 48px sans-serif;
+	width: 100%;
+	float: left;
+	clear: both;
+	padding: 10px 0;
+}
+.rowContacts > * 
+{
+	display: inline;
+}
+/*copyright*/
+.copyright
+{
+	padding: 20px 0;
+	background: grey;'
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.labeCopyright
+{
+	color: #000;
+	font: 400 16px sans-serif;
+	padding-left: 60px;
+}
+@media screen and (max-width: 980px) and (min-width: 768px){
+	.container
+	{
+		width: 98%;
+		padding: 0 1%;
+	}
+}
