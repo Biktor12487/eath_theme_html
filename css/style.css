@@ -5,6 +5,16 @@
 	border:0;
 	text-decoration: none;
 }
+/*fonts*/
+@font-face {
+	font-family:OpenSans;
+	src:url("../fonts/OpenSans.ttf");
+}
+@font-face {
+	font-family:Roboto;
+	src:url("../fonts/Roboto.ttf");
+}
+/*system*/
 .section{
 	width: 100%;
 	float: left;
@@ -30,7 +40,7 @@
 .siteName
 {
 	color: #fff;
-	font: 400 94px sans-serif;
+	font: 400 94px OpenSans;
 	text-align: center;
 }
 /*top nav*/
@@ -44,7 +54,7 @@
 {
 	width: 60%;
 	display: flex; 
-	justify-content: space-around;
+	justify-content: space-around;	
 	align-items: center;
 	color: #fff;
 	font: 400 14px sans-serif;
@@ -52,7 +62,7 @@
 .topNav a
 {
 	color: #fff;
-	font: 400 14px sans-serif;
+	font: 400 14px OpenSans;
 }
 .topNav a:hover
 {
@@ -67,7 +77,7 @@
 .topPanelNode
 {
 	background-color: #373737;
-	font: 400 16px sans-serif;
+	font: 400 16px Roboto;
 	max-width: 70%;
 	padding: 5px 5px;
 	color: #fff;
@@ -80,7 +90,7 @@
 }
 .textNode
 {
-	font: 400 14px sans-serif;
+	font: 400 14px OpenSans;
 	color: #fff;
 }
 /*about*/
@@ -101,7 +111,7 @@
 }
 .peopleRow .logo 
 {
-	font: 400 24px sans-serif;
+	font: 400 24px Roboto;
 	width: 95px;
 	height: 100px;
 	background: grey;
@@ -114,7 +124,7 @@
 .peopleRow .name
 {
 	color: #fff;
-	font: 400 18px sans-serif;
+	font: 400 18px OpenSans;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -126,7 +136,7 @@
 .contact h2
 {
 	color: #fff;
-	font: 400 32px sans-serif;
+	font: 400 32px OpenSans;
 	padding-bottom: 80px;
 }
 .rowsContact
@@ -141,7 +151,7 @@
 .rowContacts
 {
 	color: grey;
-	font: 400 48px sans-serif;
+	font: 400 48px OpenSans;
 	width: 100%;
 	float: left;
 	clear: both;
@@ -162,7 +172,7 @@
 .labeCopyright
 {
 	color: #000;
-	font: 400 16px sans-serif;
+	font: 400 16px OpenSans;
 	padding-left: 60px;
 }
 @media screen and (max-width: 980px) and (min-width: 768px){
@@ -170,5 +180,44 @@
 	{
 		width: 98%;
 		padding: 0 1%;
+	}
+}
+@media screen and (max-width: 768px){
+	.container
+	{
+		width: 96%;
+		padding: 0 2%;
+	}
+	.header
+	{
+		min-height: 300px;
+	}
+	.siteName
+	{
+		font-size: 48px;
+	}
+	.navRow .logo
+	{
+		display: none;
+	}
+	.topNav
+	{
+		width: 100%;
+	}
+	.peopleRow
+	{
+		flex-wrap: wrap;
+	}
+	.peopleRow > div
+	{
+		margin-top: 10px;
+	}
+	.contact h2
+	{
+		font-size: 26px;
+	}
+	.rowContacts
+	{
+		font-size: 19px;
 	}
 }
